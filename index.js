@@ -292,3 +292,44 @@ function koplik(str) {
   console.log(koplik("meva"));
   console.log(koplik("odamlar"));
   console.log(koplik("o'quvchi"));
+
+  // 78
+
+  function boshOxiri(str) {
+  
+    let bosh = str.charAt(0);
+    let oxirgi = str.charAt(str.length - 1);
+  
+    return bosh + oxirgi;
+  }
+  
+  console.log(boshOxiri("ganesh"));
+  console.log(boshOxiri("kali"));
+  console.log(boshOxiri("shiva"));
+  console.log(boshOxiri("vishnu"));
+  console.log(boshOxiri("durga"));
+  
+  // 79
+  function sozAytish(word) {
+
+    let birinchi2Harf = word.substring(0, 2);
+  
+    return birinchi2Harf + "... " + birinchi2Harf + "... " + word;
+  }
+  
+  console.log(sozAytish("incredible")); // "in... in... incredible"
+  console.log(sozAytish("enthusiastic")); // "en... en... enthusiastic"
+  console.log(sozAytish("outstanding")); // "ou... ou... outstanding"
+
+  // 80
+
+  function ahvol(mood) {
+    var feeling = mood || "neutral";
+    return "Today, I am feeling " + feeling;
+  }
+  
+  console.log(ahvol("happy")); // "Today, I am feeling happy"
+  console.log(ahvol("sad")); // "Today, I am feeling sad"
+  console.log(ahvol()); // "Today, I am feeling neutral"
+  
+  
